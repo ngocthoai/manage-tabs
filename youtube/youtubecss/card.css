@@ -1,0 +1,172 @@
+.lnb_card_transcripts{
+    width: calc(100% - 27px);
+    padding: 21px 10px 19px 15px;
+    background-color: rgba(240, 255, 255, 0.908);
+    box-shadow: rgb(62 145 179 / 48%) 2px 1px 2px 1px inset;
+    margin-top: 5px;
+    color:#565656;
+    position: relative;
+    border-radius: 10px;
+    transition: 0.2s linear;
+}
+.lnb_transcript_learned{
+    width: 100%;
+    font-size: 18px !important;
+    color: black;
+    outline: none;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.lnb_transcript_learned:hover{
+    cursor: pointer;
+}
+.lnb_transcript_meaning{
+    width: 100%;
+    outline: none;
+}
+.lnb_edit_transcipts{
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    padding: 5px;
+    width: calc(100% - 10px);
+    box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0.3);
+    margin-top: 9px;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+
+.lnb_groupButtonSetTimeUp{
+    position: absolute;
+    display: none;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fcfcfc70;
+    box-shadow: inset 0px 0px 1px 1px rgba(177, 177, 177, 0.081);
+    border-radius: 33px;
+    top: -1px;
+    left: 1px;
+    padding: 0px;
+    gap: 9px;
+    
+}
+.lnb_groupButtonSetTimeDown{
+    position: absolute;
+    display: none;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fcfcfc70;
+    box-shadow: inset 0px 0px 1px 1px rgba(177, 177, 177, 0.081);
+    border-radius: 33px;
+    bottom: 1px;
+    right: 1px;
+    padding: 0px;
+    gap: 9px;
+    
+}
+.lnb_groupButtonControlCard{
+    position: absolute;
+    display: none;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fcfcfc70;
+    box-shadow: inset 0px 0px 1px 1px rgba(177, 177, 177, 0.081);
+    border-radius: 33px;
+    top: -1px;
+    right: 1px;
+    padding: 0px;
+    
+}
+.lnb_translate_transcript{
+    transition: 0.2s linear;
+    font-size: 10px;
+    color: #668b66;
+    box-shadow: inset 0px 0px 1px 1px rgb(159 159 159 / 30%);
+    width: 40px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 4px;
+}
+.lnb_translate_transcript:hover{
+    transform: scale(1.2);
+    color: rgb(10, 247, 29);
+    cursor: pointer;
+    margin-left: 5px;
+    margin-right: 5px;
+}   
+.lnb_delete_transcript{
+    padding: 3px 5px !important;
+}
+.lnb_edit_transcript{
+    font-size: 10px;
+    transition: 0.2s linear;
+    color: rgb(2, 2, 2);
+    width: 25px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 1px 1px rgb(159 159 159 / 30%);
+    padding: 3px;
+    background-color: rgb(219 219 219 / 0%);
+}  
+.lnb_edit_transcript:hover{
+    transform: scale(1.2);
+    color: rgb(170, 0, 37);
+    cursor: pointer;
+    margin-left: 5px;
+    margin-right: 5px;
+} 
+.lnb_save_transcript{
+    font-size: 10px;
+    transition: 0.2s linear;
+    color: rgb(2, 2, 2);
+    width: 25px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 1px 1px rgb(159 159 159 / 30%);
+    padding: 3px;
+    background-color: rgb(219 219 219 / 0%);
+    display: none;
+}  
+.lnb_save_transcript:hover{
+    transform: scale(1.2);
+    color: rgb(170, 0, 37);
+    cursor: pointer;
+    margin-left: 5px;
+    margin-right: 5px;
+} 
+.lnb_buttonCard{
+    padding: 3px;
+    border: 1px solid #2effff0a;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px 1px rgb(94 234 255 / 10%);
+    color: #51767b78;
+    transition: 0.2s linear;
+}
+.lnb_buttonCard:hover {
+    transform: scale(1.2);
+    color: rgb(170, 0, 37);
+    cursor: pointer;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.lnb_activeCardTran{
+    color:  #0000fb;
+}
+.lnb_groupButtonCopy{
+    position: absolute;
+    display: flex;
+    bottom: 38px;
+    right: 25px;
+    border-radius: 5px;
+    color: black;
+    z-index: 9;
+    transition: 0.2s linear;
+    padding: 0px;
+    justify-content: space-around;
+    width: 146px;
+    background-color: #aadddd7a;
+    height: 18px;
+}
+[status="flex"]{
+    color: red;
+}

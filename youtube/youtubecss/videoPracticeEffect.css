@@ -1,0 +1,476 @@
+#lnb_id_transcriptInYoutube{
+    display: none;
+    width: 98%;
+    position: fixed;
+    height: 98%;
+    background-color: rgb(0 131 150);
+    box-shadow: rgb(0 242 255 / 34%) 0px 0px 13px 9px;
+    z-index: 9999999999;
+    border-radius: 11px;
+    overflow: hidden;
+    color: white;
+    left: 1%;
+    top: 1%;
+    transition: 0.2s linear;
+}
+
+.lnb_activePrac{
+    background-color: rgb(255 7 7) !important;
+    color: yellow;
+}
+.lnb_id_transcriptInYoutube{
+    width: 100%;
+    height: 100%;
+    box-shadow: rgb(0 179 255 / 27%) 0px 0px 5px 5px inset;
+}
+#lnb_id_transcriptInYoutubeheader{
+    width:26px;
+}
+.lnb_mainPracticeScreen{
+    display: block;
+    transition: 0.2s linear;
+    width: calc(100% - 16px);
+    height: calc(100% - 56px);
+    padding: 10px 3px;
+    opacity: 1;
+    overflow: hidden;
+}
+.lnb_rowResultPractice{
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+}
+.lnb_startScreen{
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: black;
+    border-radius: 10px;
+}
+.lnb_contentStartScreen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+}
+.buttonPractice{
+    width: 79px;
+    height: 43px;
+    text-align: center;
+    padding-top: 30px;
+    border-radius: 50%;
+    color: white;
+    font-weight: bold;
+    transition: 0.2s linear;
+}
+.buttonPractice:hover{
+    cursor: pointer;
+    color: yellow;
+    transform: scale(1.2);
+}
+.lnb_buttonCancelPr{
+    background-color: rgb(213, 32, 0);
+}
+.lnb_buttonStartPr{
+    background-color: rgb(0, 191, 175);
+}
+
+.lnb_practiceScreen{
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+.lnb_rowOriginTrans{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-y: auto;
+    gap: 10px;
+}
+
+#lnb_scoreNumberSpeechYoutube{
+    height: 55px;
+    width: 66px;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: rgb(32 32 17 / 40%) 0px -5px 5px 3px inset;  
+    background-color: rgb(206 0 0);
+    font-weight: bold;
+    font-family: fantasy;
+    padding-top: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 39px;
+}
+
+#lnb_main_transcript_learned{
+    display: block;
+    text-align: left;
+    color:rgb(255, 255, 255);
+    font-size: 24px;
+    text-shadow: 1px 1px 0px rgb(10 1 1);
+    padding: 13px 15px;
+    width: calc(100% - 30px);
+    border-radius: 3px;
+    min-height: 59px;
+}
+
+#lnb_group_main_ButtonTranscript{
+    position: absolute;
+    display: flex;
+    top:0px;
+    justify-content: flex-end;
+    right: 0px;
+    z-index: 999999999999;
+}
+
+#lnb_main_transcript_meaning{
+    min-height: 16px;
+    font-size: 16px;
+    text-align: center;
+    outline: none;
+}
+.lnb_button_main_in_youtube{
+    background-color: #bdbdbd5e;
+    height: 16px;
+    display: inline-block;
+    border-radius: 10px 30px 50px 20px;
+    padding: 5px 10px;
+    box-shadow: inset 0px 0px 1px 1px rgb(201 201 201 / 40%);
+    transition: 0.2s linear;
+    margin-left: 15px;
+
+}
+.lnb_button_main_in_youtube:hover{
+    cursor: pointer;
+    background-color: #00a3d589;
+}
+
+.lnb_activeCardTran{
+    color: red;
+}
+mark { 
+    background-color: rgb(228 255 4 / 84%);
+    border-radius: 9px;
+    color: red;
+    font-size: 28px;
+    font-weight: bold;
+    box-shadow: rgb(12 10 3 / 34%) 0px 0px 3px 2px;
+}
+.lnb_headerTransPrac{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color:rgb(255, 255, 255);
+    font-size: 16px;
+    padding: 13px 15px;
+    width: calc(100% - 30px);
+    border-radius: 3px;
+    margin-top: 5px;
+    height: 0px;
+    background-color: #00ffff33;
+    backdrop-filter: blur(100px);
+    pointer-events: none;
+}
+#lnb_main_transcript_origin{
+    display: block;
+    text-align: left;
+    color:rgb(255, 255, 255);
+    font-size: 36px;
+    text-shadow: 1px 1px 0px rgb(10 1 1);
+    padding: 13px 15px;
+    width: calc(100% - 30px);
+    border-radius: 3px;
+    min-height: 59px;
+}
+.lnb_rowOrigin{
+    padding: 25px;
+    width: calc(100% - 25px);
+    height: calc(100% - 179px);
+    overflow-y: auto;
+}
+#lnb_main_transcript_meaning{
+    font-size: 18px;
+    text-shadow: 1px 1px 0px rgb(10 1 1);
+    color: #b1ab05;
+    min-height: 79px;
+}
+.interim{
+    width: 100%;
+    text-align: left;
+
+}
+
+#lnb_recordingPractice{
+    width: 50px;
+    height: 29px;
+    text-align: center;
+    padding-top: 15px;
+    border-radius: 50%;
+    box-shadow: rgb(32 32 17 / 40%) 0px -5px 5px 3px inset;
+    background-color: rgb(49 139 57);
+}
+#lnb_recordingPractice img{
+    width: 38px;
+    height: 31px;
+    border-radius: 50%;
+    margin-top: -10px;
+}
+
+/* healthy */
+.lnb_rowHealth{
+    width: 100%;
+    height: 23px;
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+}
+.lnb_health-bar {
+    border-radius: 15px;
+    overflow: hidden;
+    flex: 1;
+    background-color: rgb(164 162 162 / 0%);
+    box-shadow: rgb(163 163 163 / 40%) 0px -3px 5px 5px inset;
+    height: 100%;
+}
+
+.lnb_health-value {
+    height: 100%;
+    width: 0px;
+    background-color: #4CAF50; /* Màu xanh lá cây, có thể điều chỉnh theo ý muốn */
+    transition: width 2s ease; /* Hiệu ứng chuyển động khi giảm máu */
+    /* animation: shake 1s ease-in-out infinite; */
+    border-radius: 3px;
+    box-shadow: rgb(185 220 94 / 40%) 0px 0px 5px 5px inset;
+}
+
+.lnb_health-bar .critical{
+    background-color: #c20000 !important; /* Màu cực đỏ khi máu dưới 5% */
+}
+
+.lnb_health-bar .low {
+    background-color: #fb2121 !important; /* Màu đỏ khi máu từ 5% đến 10% */
+}
+
+.lnb_health-bar .medium {
+    background-color: #ffd700 !important; /* Màu vàng khi máu từ 10% đến 50% */
+}
+
+.lnb_health-bar .high {
+    background-color: #00ff00 !important; /* Màu xanh khi máu từ 50% đến 100% */
+}
+  
+  @keyframes shake {
+    0% {
+        transform: rotate(0deg);
+    }
+    10% {
+        transform: rotate(1deg);
+    }
+    20% {
+        transform: rotate(2deg);
+    }
+    30% {
+        transform: rotate(3deg);
+    }
+    40% {
+        transform: rotate(2deg);
+    }
+    50% {
+        transform: rotate(1deg);
+    }
+  }
+
+#lnb_sttTranscript{
+    position: absolute;
+    left: 39px;
+    pointer-events: none;
+    width: 95px;
+    text-align: center;
+    padding-top: 4px;
+    border-radius: 10px;
+    height: 19px;
+    font-size: 12px;
+    font-family: cursive;
+    top: 3px;
+    background-color: black;
+    box-shadow: rgb(116 0 0 / 96%) 0px -2px 3px 2px inset;
+}
+#lnb_limitPractice{
+    width: 39px;
+    height: 100%;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+#lnb_trollScore{
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+    float: left;
+    box-shadow: rgb(116 0 0 / 96%) 0px -2px 3px 2px inset;
+    overflow: hidden;
+    border-radius: 50%;
+    border:3px solid white;
+}
+#lnb_id_vidtrollScore{
+    width: 110%;
+    height: 110%;
+    margin-top: -5px;
+    margin-left: -10px;
+    object-fit: cover;
+}
+.lnb_rowResultPrac{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: calc(100% - 265px);
+    overflow: auto;
+}
+.lnb_rowAdPractice{
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    gap: 5px;
+    position: relative;
+    height: calc(100% - 291px);
+}
+.lnb_colAdPractice{
+    height: 100%;
+    flex: 1;
+}
+.lnb_rowAdPractice iframe{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.lnb_wrongCh{
+    color:red;
+    font-weight: bold;
+}
+.lnb_cheerCorrect{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    background-image: url('https://img1.picmix.com/output/stamp/normal/0/1/0/0/1410010_e1288.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.activeButtonPrac{
+    background-color: aqua;
+    color: red;
+}
+.lnb_interimPrac{
+    position: absolute;
+    width: 100%;
+    height: 39px;
+    bottom:0px;
+    left: 0px;
+    z-index: 9999;
+    overflow: hidden;
+    font-size: 16px;
+    color: #858585;
+}
+#lnb_interim{
+    width: calc(100% - 73px);
+    padding-left: 73px;
+    overflow-y: auto;
+}
+
+/* video teacher */
+.lnb_videoTeacher{
+    display: none;
+    height: 100%;
+    max-width: 50%;
+    background: red;
+}
+.lnb_videoTeacher img{
+    width: 100%;
+    height: 100%;
+}
+
+/* Micro select */
+
+.lnb_rowMicroPrac{
+    position: relative;
+    width: 179px;
+    height: 100%;
+    background: #03a5a5c2;
+    border-radius: 10px;
+    padding: 3px 5px;
+    font-size: 12px;
+}
+.lnb_microPracActive{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transition: 0.2s linear;
+}
+.lnb_microPracActive:hover{
+    cursor: pointer;
+    background-color: rgb(0 192 189);
+}
+.lnb_iconMicroPracActiVe{
+    width: 17px;
+    display: inline-block;
+    font-size: 16px;
+}
+.lnb_microNamePracActive{
+    height: 15px;
+    display: inline-block;
+    width: 145px;
+    overflow: hidden;
+}
+.lnb_listMicroPrac{
+    display: none;
+    position: absolute;
+    left: 0px;
+    height: auto;
+    top: 29px;
+    width: 100%;
+    overflow: hidden;
+    transition: 0.2s linear;
+}
+#lnb_listMicroPrac{
+    height: auto;
+    width: 100%;
+    border-radius: 5px;
+    background-color: darkcyan;
+    max-height: 298px;
+    min-height: 100px;
+    overflow: auto;
+}
+.lnb_microPracItem{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #057781;
+    padding: 5px 0px;
+    transition: 0.2s linear;
+}
+.lnb_microPracItem:hover{
+    cursor: pointer;
+    color:#ffd700;
+    background-color: rgb(0 152 152);
+}
+.lnb_iconMicroPrac{
+    width: 19px;
+    font-size: 16px;
+    padding: 3px;
+}

@@ -1,0 +1,64 @@
+{
+    "name": "Note For Youtube",
+    "description": "Create note for all Video on Youtube",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": [
+      "storage",
+      "activeTab"
+    ],
+    "icons": {
+      "48": "/assets/image/logoNotebook.png",
+      "128": "/assets/image/logoNotebook.png",
+      "16": "/assets/image/logoNotebook.png"
+    },
+    "action":{
+      "default_icon": "/assets/image/logoNotebook.png",
+      "default_title": "Music",
+      "default_popup": "/langnotebookExtension/popup.html",
+      "onclick": "popup.js"
+    },
+
+    "content_scripts": [
+        
+        {"matches": [ "https://www.youtube.com/*",  "https://youtube.com/*","https://m.youtube.com/*","https://www.m.youtube.com/*"],
+          "css": ["/youtube/youtubecss/controlVideo.css",
+                  "/youtube/youtubecss/videoPracticeEffect.css",
+                  "/youtube/youtubecss/card.css",
+                  "/youtube/youtubecss/shadowingWindow.css",
+                  "/youtube/youtubecss/commoncss.css"
+                ],
+          "js": [
+                  "/youtube/youtubejs/variable.js",
+                  "/youtube/youtubejs/functionCommon.js",
+                  "/youtube/youtubejs/languages.js",
+                  "/youtube/youtubejs/dragElement.js",
+                  "/youtube/youtubejs/buttonMicroHtml.js",
+                  "/youtube/youtubejs/buttonPowerHtml.js",
+                  "/youtube/youtubejs/renderTranscriptHtml.js",
+                  "/youtube/youtubejs/noteCenterWindowHtml.js",
+                  "/youtube/youtubejs/listenVideoUpdate.js",
+
+                  "/youtube/youtubejs/practiceSpeech/practiceSpeakingSpeech.js",
+                  "/youtube/youtubejs/practiceSpeech/practiceSpeech.js",
+                  "/youtube/youtubejs/practiceSpeakingHtml.js",
+
+                  "/youtube/youtubejs/commandSpeech/mainFunction.js",
+                  "/youtube/youtubejs/orderBySpeech.js",
+
+                  "/youtube/youtubejs/eventContentTranscript.js",
+                  "/youtube/youtubejs/translate.js",
+
+                  "/youtube/youtubejs/searchSpeech/mainSearchCommand.js",
+                  "/youtube/youtubejs/searchSpeech/searchSpeech.js",
+                  "/youtube/youtubejs/numberCommandSpeech/numberCommanSpeech.js",
+
+
+                  "/youtube/youtubejs/formAddNewTranscript.js",
+                  "/youtube/shadowingVid/shadowingvidHtml.js",
+
+                  "/youtube/soundEffect/soundEffectHtml.js"
+                ]
+        }
+      ]
+}
