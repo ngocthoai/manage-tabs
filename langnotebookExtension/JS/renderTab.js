@@ -1,9 +1,7 @@
-chrome.tabs.query({}, function(tabs) {
-  console.log('Tabs:', tabs);
-  var tabList = document.getElementById('l_tabCurrents');
-  console.log('tabList:', tabList);
+function l_renderTabs(_idElement,_arrTab){
+  var tabList = document.getElementById('_idElement');
 
-  tabs.forEach(function(tab) {
+  _arrTab.forEach(function(tab) {
     var div = document.createElement('div');
     div.setAttribute('class','l_buttonTabContent')
     div.setAttribute('idTab',tab.id)
@@ -13,4 +11,4 @@ chrome.tabs.query({}, function(tabs) {
     tabList.appendChild(div);
     div.addEventListener('click', activateTab);
   });
-});
+}

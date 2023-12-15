@@ -9,10 +9,44 @@
     <title>Document</title>
 </head>
 <body>
-    <h2 >Hello world</h2>
-    <h2 id="total">Hello world</h2>
-    <h3 id="myButton">tang</h3>
+    <div id="l_idManageTabsWindow">
+      <div class="l_mainScreen">
+        <div class="l_rowHeader"></div>
 
+        <div class="l_rowContent">
+
+          <div class="l_colLeft">
+            <div class="l_colLeftUp">
+              <div class="l_currentTabs l_buttonLeft">All Current Tabs</div>
+              <div class="l_favouristTabs l_buttonLeft">Favourist</div>
+              <div class="l_title l_buttonLeft">List Students</div>
+            </div>
+            <div class="l_students">
+
+            </div>
+            <div class="l_colLeftDown l_buttonLeft">
+              History Store
+            </div>
+          </div>
+
+          <div class="l_colRight">
+            <div class="l_contents">
+              <div id="l_tabCurrents">
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="l_rowFooter"></div>
+      </div>
+    </div>
+    
+
+    <script src="./JS/variables.js"></script>
+    <script src="./JS/functionCommon.js"></script>
+    <script src="./JS/renderTab.js"></script>
     <script src="./JS/storage.js"></script>
+    <script src="./JS/favouristTabs.js"></script>
 </body>
 </html>

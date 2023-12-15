@@ -1,5 +1,96 @@
+
 body{
-    width: 500px;
-    height: 500px;
-    background-color: red;
+    margin: 0;
+    padding: 0;
+    width: 779px;
+    height: 579px;
 }
+#l_idManageTabsWindow{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: antiquewhite;
+    z-index: 9999999999;
+}
+.l_mainScreen{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+/* header */
+.l_rowHeader{
+    width: 100%;
+    height: 39px;
+    background-color: brown;
+}
+/* end Header */
+
+/* contents */
+.l_rowContent{
+    width: 100%;
+    height: calc(100% - 39px - 49px);
+    min-height: calc(100% - 39px - 49px);
+    background-color: azure;
+    display: flex;
+    justify-content: flex-start;
+}
+/* left col */
+.l_colLeft{
+    width: 279px !important;
+    min-width: 279px;
+    height: 100%;
+    background-color: aquamarine;
+}
+.l_colLeftUp{
+    width: 100%;
+    height: calc(100% - 39px);
+}
+.l_buttonLeft{
+    width: 100%;
+    height: 29px;
+    background-color: azure;
+    text-align: center;
+    margin-bottom: 1px;
+    display: grid;
+    place-items: center;
+}
+.l_buttonLeft:hover{
+    cursor: pointer;
+    background-color: antiquewhite;
+}
+
+.l_colLeftDown{
+    width: 100%;
+    height: 39px;
+}
+/* right col */
+.l_colRight{
+    flex: 1;
+    height: 100%;
+    color: rgb(0, 0, 0);
+    background-color: rgb(26, 55, 46);
+}
+.l_buttonTabContent{
+    width: 100%;
+    height: 22px;
+    background-color: azure;
+    text-align: left;
+    margin-bottom: 1px;
+    padding: 5px;
+    overflow: hidden;
+}
+.l_buttonTabContent:hover{
+    cursor: pointer;
+    background-color: antiquewhite;
+}
+/* endcontents */
+
+/* footer */
+.l_rowFooter{
+    width: 100%;
+    height: 49px;
+    background-color: brown;
+}
+/* end footer */
